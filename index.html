@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Swordfish Robot Dash</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<canvas id="canvas"></canvas>
+
+<div class="dash">
+
+  <div class="screen">
+    <div class="label">SPEED</div>
+
+    <div class="speed-bar">
+      <div id="speedFill"></div>
+    </div>
+
+    <div class="value" id="speed">0.00 m/s</div>
+  </div>
+
+  <div class="screen">
+    <div class="label">DISTANCE</div>
+    <div class="value" id="distance">0.00 m</div>
+  </div>
+
+  <div class="screen coords">
+    <div class="label">COORDINATES</div>
+    <div class="value" id="coords">X: 0, Y: 0</div>
+  </div>
+
+  <button onclick="togglePause()" id="pauseBtn">PAUSE</button>
+  <button onclick="restart()">RESET</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
